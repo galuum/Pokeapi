@@ -1,0 +1,97 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+}
+
+/* Asegura altura completa */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo y layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f44336, #ff9800);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Input y botón personalizados */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    color: #f44336;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ffd1c1;
+}
+
+/* Contenedor de info del Pokémon */
+#pokemon-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+/* Imagen del Pokémon */
+#sprite {
+    margin: 20px 0;
+    width: 150px;
+    height: 150px;
+}
+
+/* Textos */
+#name {
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+#type {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-transform: capitalize;
+}
+
+#stats, #height, #weight, #region {
+    font-size: 16px;
+    margin: 5px 0;
+}
